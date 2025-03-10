@@ -35,7 +35,7 @@ touch claude_desktop_config.json
 ```bash
 npm run inspector
 ```
-7. 打開瀏覽器輸入以下網址 http://localhost:5173,點擊 Connect 按鈕
+7. 打開瀏覽器輸入以下網址 http://localhost:5173 ,點擊 Connect 按鈕
 8. 右側會出現以下畫面再點選 List Resources，會列出先前ListResourcesRequestSchema 所提供的 Resources
 9. 點擊 Hello World Message, 右側會出現 Server 的回應
 
