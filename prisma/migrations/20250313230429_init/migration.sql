@@ -1,10 +1,12 @@
 -- CreateTable
-CREATE TABLE "students" (
+CREATE TABLE "customers" (
     "id" BIGSERIAL NOT NULL,
     "name" TEXT NOT NULL,
+    "type" TEXT NOT NULL,
     "age" INTEGER NOT NULL,
+    "interests" TEXT[],
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
-    CONSTRAINT "students_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "customers_pkey" PRIMARY KEY ("id")
 );
