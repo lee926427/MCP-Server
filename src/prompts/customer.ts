@@ -32,10 +32,17 @@ export const customerPrompts = (server: McpServer): void => {
                 return {
                     messages: [
                         {
+                            role: "assistant",
+                            content: {
+                                type: "text",
+                                text: `查詢客戶結果：\n${customers.map(customer => `姓名：${customer.name},年齡：${customer.age},興趣：${customer.interests.join(', ')}`).join('\n')}`,
+                            }
+                        },
+                        {
                             role: "user",
                             content: {
                                 type: "text",
-                                text: `幫我分析這些消費客戶具有什麼樣的特徵:\n${customers}`,
+                                text: '這些消費客戶具有什麼樣的共同特徵?',
                             },
                         },
                         {

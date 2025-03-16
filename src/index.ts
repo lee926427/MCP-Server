@@ -1,8 +1,8 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { customerTools } from "@/tools";
-import { customerResources } from "@/resources";
-import { customerPrompts } from "@/prompts";
+import { customerTools } from "./tools/customer.js";
+import { customerResources } from "./resources/customer.js";
+import { customerPrompts } from "./prompts/customer.js";
 
 const server = new McpServer({
   name: "mcp-server",
